@@ -14,4 +14,14 @@
     margin-bottom: 10px;
     padding: 10px 20 px;
 }
-.
+.title{
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.content{
+    color: #ffffff;
+    height: auto;
+}
