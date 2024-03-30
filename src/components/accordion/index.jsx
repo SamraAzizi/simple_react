@@ -6,7 +6,7 @@ export default function Accordion() {
 
     function handleSingleSelection(getCurrentId) {
         console.log(getCurrentId)
-        setSelected(getCurrentId)
+        setSelected(getCurrentId === selected ?null : getCurrentId);
     }
     return
     <div className="wrapper"><div className="accordion">{
