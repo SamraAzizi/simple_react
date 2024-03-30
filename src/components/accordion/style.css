@@ -5,3 +5,13 @@
     justify-content: center;
     align-items: center;
 }
+.accordion{
+    width: 500px;
+}
+
+.item{
+    background:#614101 ;
+    margin-bottom: 10px;
+    padding: 10px 20 px;
+}
+.
