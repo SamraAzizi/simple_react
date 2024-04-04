@@ -5,7 +5,7 @@ import { useState } from "react";
 import data from "./data";
 import "./style.css";
 
-export default function accordion() {
+export default function Accordian() {
   const [selected, setSelected] = useState(null);
   const [enableMultiSelection, setEnableMultiSelection] = useState(false);
   const [multiple, setMultiple] = useState([]);
@@ -31,7 +31,7 @@ export default function accordion() {
       <button onClick={() => setEnableMultiSelection(!enableMultiSelection)}>
         Enable Multi Selection
       </button>
-      <div className="accordion">
+      <div className="accordian">
         {data && data.length > 0 ? (
           data.map((dataItem) => (
             <div className="item">
