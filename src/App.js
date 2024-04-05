@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       {/* accordion component */}
-      <Accordian/>
+      { /*<Accordian/> */ }
 
       {/* random color compoenent */}
 
