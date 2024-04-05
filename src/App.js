@@ -8,6 +8,11 @@ function App() {
       {/* accordion component */}
       <Accordian/>
 
+      {/* random color compoenent */}
+
+      <RandomColor/>
+
+
     </div>
   );
 }
