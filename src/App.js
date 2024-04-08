@@ -3,6 +3,7 @@ import './App.css';
 import Accordian from "./components/accordian";
 import RandomColor from "./components/random_color";
 import StarRating from './components/star_rating'
+import ImageSlider from './components/image_slider';
 
 function App() {
   return (
@@ -16,7 +17,11 @@ function App() {
 
       {/* star rating component */}
 
-      <StarRating numOfStar={10} />
+      {/* <StarRating numOfStar={10} /> */}
+
+      {/* image slider component */}
+
+       <ImageSlider url ={}/>
 
 
     </div>
