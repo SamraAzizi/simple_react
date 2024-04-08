@@ -31,6 +31,12 @@ export default function ImageSlider(url, limit){
         if(url !== '')  fectchImages()
 
     },[url] )
+    if(loading){
+        return <div>Loading data! please wait</div>
+    }
+    if(error !== null){
+        return <div>error occured! {error}</div>
+    }
 
 
     return <div className="container"></div>
