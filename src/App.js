@@ -21,7 +21,7 @@ function App() {
 
       {/* image slider component */}
 
-       <ImageSlider url ={}/>
+       <ImageSlider url ={} page={'1'}/>
 
 
     </div>
