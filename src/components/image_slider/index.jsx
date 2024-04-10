@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import {BsArrowLeftCircleFill, BsArrowRightCircleFill'} from 'react-icons/bs';
-
+import './style.css';
 
 export default function ImageSlider(url, limit=5, page=1){
 
@@ -59,6 +59,20 @@ export default function ImageSlider(url, limit=5, page=1){
             : null
 
         }
+
+        <BsArrowRightCircleFill className="arrow arrow-right"/>
+        <span className="circle-indicators">{
+            image && image.length ? 
+            image.map((_,index)=> <button 
+            key={index}
+            className="current-indicator"
+            ></button>)
+
+            :null
+
+        }
+
+        </span>
     </div>
     
 }
