@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import {BsArrowLeftCircleFill, BsArrowRightCircleFill'} from 'react-icons/bs';
 
 
 export default function ImageSlider(url, limit=5, page=1){
@@ -14,7 +15,7 @@ export default function ImageSlider(url, limit=5, page=1){
         try{
             const response = await fetch(`${getUrl}?page=${page}1&limit=${limit}`);
             const data = await response.json();
-            if(data){
+            if(data) {
                 setImage(data)
                 setLoading(false)
             }
@@ -42,6 +43,22 @@ export default function ImageSlider(url, limit=5, page=1){
     }
 
 
-    return <div className="container"></div>
+    return <div className="container">
+        <BsArrowLeftCircleFill className="arrow arrow-left"/>{
+            image && image,length ? 
+            image.map(imageItem =>(
+                <img
+                key={imageItem.id}
+                alt={imageItem.download_url}
+                src={imageItem.download_url}
+                className="current-image"
+                
+                />
+
+            ) )
+            : null
+
+        }
+    </div>
     
 }
