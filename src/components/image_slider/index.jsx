@@ -29,12 +29,13 @@ export default function ImageSlider(url, limit=5, page=1){
     }
 
     function handlePrevious(){
-        setCurrentSlide() 
+        setCurrentSlide(currentSlide === 0 ? image.length -1 : currentSlide -1) 
 
     }
 
 
     function handleNext(){
+        setCurrentSlide(currentSlide === image.length -1 ? 0: currentSlide +1)
          
     }
     useEffect(()=>{
@@ -54,13 +55,13 @@ export default function ImageSlider(url, limit=5, page=1){
 
     return <div className="container">
         <BsArrowLeftCircleFill onClick={handlePrevious} className="arrow arrow-left"/>{
-            image && image,length ? 
-            image.map(imageItem =>(
+            image && image.length ? 
+            image.map((imageItem , index)=>(
                 <img
                 key={imageItem.id}
                 alt={imageItem.download_url}
                 src={imageItem.download_url}
-                className="current-image"
+                className={currentSlide === index ? "current-image" : 'current-image'}
                 
                 />
 
