@@ -61,7 +61,7 @@ export default function ImageSlider(url, limit=5, page=1){
                 key={imageItem.id}
                 alt={imageItem.download_url}
                 src={imageItem.download_url}
-                className={currentSlide === index ? "current-image" : 'current-image'}
+                className={currentSlide === index ? "current-image" : 'current-image hide-current-image'}
                 
                 />
 
@@ -75,7 +75,9 @@ export default function ImageSlider(url, limit=5, page=1){
             image && image.length ? 
             image.map((_,index)=> <button 
             key={index}
-            className="current-indicator"
+            className={currentSlide === index ? "current-indicator": "current-indicator hide-current-indicator"}
+            onClick={()=> setCurrentSlide(index)}
+            
             ></button>)
 
             :null
