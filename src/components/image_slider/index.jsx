@@ -28,6 +28,15 @@ export default function ImageSlider(url, limit=5, page=1){
 
     }
 
+    function handlePrevious(){
+        setCurrentSlide() 
+
+    }
+
+
+    function handleNext(){
+         
+    }
     useEffect(()=>{
         if(url !== '')  fectchImages()
 
@@ -44,7 +53,7 @@ export default function ImageSlider(url, limit=5, page=1){
 
 
     return <div className="container">
-        <BsArrowLeftCircleFill className="arrow arrow-left"/>{
+        <BsArrowLeftCircleFill onClick={handlePrevious} className="arrow arrow-left"/>{
             image && image,length ? 
             image.map(imageItem =>(
                 <img
@@ -60,7 +69,7 @@ export default function ImageSlider(url, limit=5, page=1){
 
         }
 
-        <BsArrowRightCircleFill className="arrow arrow-right"/>
+        <BsArrowRightCircleFill onClick={handleNext} className="arrow arrow-right"/>
         <span className="circle-indicators">{
             image && image.length ? 
             image.map((_,index)=> <button 
