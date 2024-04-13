@@ -4,6 +4,7 @@ import Accordian from "./components/accordian";
 import RandomColor from "./components/random_color";
 import StarRating from './components/star_rating'
 import ImageSlider from './components/image_slider';
+import QRCode from './components/qr_code_generator';
 
 function App() {
   return (
@@ -21,7 +22,11 @@ function App() {
 
       {/* image slider component */}
 
-       <ImageSlider url ={} page={'1'}/>
+      { /*<ImageSlider url ={} page={'1'}/>*/}
+      {/* QR code generator */}
+
+      <QRCode/>
+
 
 
     </div>
