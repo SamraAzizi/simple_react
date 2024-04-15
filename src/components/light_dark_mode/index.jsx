@@ -1,4 +1,5 @@
 import useLocalStorage from "./useLocalStorage"
+import './theme.css'
 
 
 
@@ -11,7 +12,7 @@ export default function LightDarkMode(){
 
     }
 
-    return <div className="light-dark-mode">
+    return <div className="light-dark-mode" data-theme={theme}>
         <div className="container">
             <p>Asalamalaikum Everyone</p>
             <button onClick={handletoggleTheme}>Change The Theme!</button>
