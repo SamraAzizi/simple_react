@@ -6,6 +6,8 @@ import StarRating from './components/star_rating'
 import ImageSlider from './components/image_slider';
 import QRCode from './components/qr_code_generator';
 import LightDarkMode from './components/light_dark_mode';
+import GitHubFinder from './components/github_profile_finder';
+
 
 function App() {
   return (
@@ -28,7 +30,11 @@ function App() {
 
       {/* <QRCode/> */}
 
-      <LightDarkMode/>
+      {/*<LightDarkMode/>*/}
+
+      {/* github username finder */}
+
+      <GitHubFinder/>
 
 
 
