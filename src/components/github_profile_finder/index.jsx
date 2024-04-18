@@ -48,6 +48,9 @@ export default function GitHubFinder(){
             <button onClick={handleSubmit}>Search</button>
 
         </div>
+        {
+            userData !== null ? <User user={userData}></User> :null
+        }
     </div>
     
 }
