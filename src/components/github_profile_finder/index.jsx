@@ -14,12 +14,14 @@ export default function GitHubFinder(){
         if(data){
             setUserData(data)
             setLoading(false)
+            setUserName('')
 
         }
 
     }
 
     function handleSubmit(){
+        fetchGithubUserData()
 
     }
 
