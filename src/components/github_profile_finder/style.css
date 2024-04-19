@@ -32,3 +32,42 @@
     cursor: pointer;
 
 }
+
+.user{
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid;
+}
+
+.avator{
+    height: 150px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+
+
+}
+
+.name-container{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+
+.name-container p{
+    margin: 0px;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.profile-info div{
+    display:flex ;
+    justify-content: center;
+    gap: 20px;
+    margin: 0px;
+    font-size: 20px;
+    font-weight: bold;
+
+}
