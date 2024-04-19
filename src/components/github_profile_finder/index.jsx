@@ -1,4 +1,7 @@
 import { useEffect, useState } from "react"
+import { useEffect } from "react"
+import User from './user';
+import './style.css'; 
 
 
 export default function GitHubFinder(){
